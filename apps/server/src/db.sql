@@ -41,7 +41,7 @@ create table if not exists student(
 );
 
 create table if not exists maintenance_staff(
-    staff_id UUID REFERENCES users(id) PRIMARY KEY on DELETE CASCADE, 
+    staff_id UUID REFERENCES users(id) PRIMARY KEY on DELETE CASCADE, -
     designation TEXT NOT NULL
 );
 

@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
+import Complaint from './pages/Complaint'
 import Contact from './pages/Contact'
 import Help from './pages/Help'
 import Team from './pages/Team'
@@ -53,6 +54,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login isloggedin={isloggedin} setIsloggedin={setIsloggedin} />} />
         <Route path="/dashboard" element={isloggedin ? <Dashboard /> : <Login isloggedin={isloggedin} setIsloggedin={setIsloggedin} />} />
+        <Route path="/complaint" element={isloggedin ? <Complaint /> : <Login isloggedin={isloggedin} setIsloggedin={setIsloggedin} />} />
         <Route path="/profile" element={isloggedin ? <Profile /> : <Login isloggedin={isloggedin} setIsloggedin={setIsloggedin} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/help" element={<Help />} />

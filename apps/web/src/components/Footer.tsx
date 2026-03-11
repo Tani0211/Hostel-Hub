@@ -17,7 +17,7 @@ function Footer() {
           <div className="flex flex-col gap-3 items-center md:items-start">
             <span className="text-xs font-bold text-foreground uppercase tracking-widest">Platform</span>
             <nav className="flex flex-col gap-2 items-center md:items-start">
-              <Link to="/complaints" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Complaints</Link>
+              <Link to="/complaint" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Complaints</Link>
               <Link to="/announcements" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Announcements</Link>
               <Link to="/mess-feedback" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Mess Feedback</Link>
             </nav>
